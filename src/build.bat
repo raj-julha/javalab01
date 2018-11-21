@@ -26,7 +26,7 @@ SET JAVAC="C:\Program Files\Java\jdk-10.0.2\bin"
 @rem so double check why it should  preceed each file
 @rem Check how we can incldue all classes at one go
 
-@rem %JAVAC%\jar -cf --verbose ../target/hello.jar -C ../target/class/ com/raj/HelloWorld.class -C ../target/class/ com/raj2/HelloWorld2.class 
+@rem %JAVAC%\jar -cvf ../target/hello.jar -C ../target/class/ com/raj/HelloWorld.class -C ../target/class/ com/raj2/HelloWorld2.class 
 
 @rem change to the ../target/classes and add all subfolders (see the dot)
 %JAVAC%\jar -cf --verbose ../target/hello.jar -C ../target/classes .
